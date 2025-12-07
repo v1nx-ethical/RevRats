@@ -1,0 +1,9 @@
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  INVESTIGATION TEAM                                                         │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  • PRIMARY ANALYST: Smocky                                                  │
+│  • COLLABORATOR: duo6 (Initial discovery and reporting)                     │
+│  • COMMUNITY SERVER: https://discord.gg/zMNUsjh9                            │
+│  • SOURCE CODE REPOSITORY: https://github.com/v1nx-ethical/RevRats          │
+│  • LICENSE: MIT License (2025)                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
