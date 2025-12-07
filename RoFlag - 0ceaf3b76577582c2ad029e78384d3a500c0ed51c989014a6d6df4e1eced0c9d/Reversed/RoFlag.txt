@@ -1,0 +1,34 @@
+██████████████████████████████████████████████████████████████████████████████████
+█  PRIMARY MALWARE: RoFlag.exe (MAIN DROPPER/EXECUTOR)                        █
+██████████████████████████████████████████████████████████████████████████████████
+
+• FILE TYPE: .NET Executable (Windows Portable Executable)
+• COMPILATION: .NET Framework 4.8, Assembly Version 1.0.0.0
+• ASSEMBLY GUID: 8c92514f-eef7-44cc-9a74-ca9d410c52bc
+• DISCOVERY SOURCE: https://gofile.io/d/LNzufK
+• DECOMPILED SOURCE: https://gofile.io/d/bKBpXd
+• STRINGS ANALYSIS: https://gofile.io/d/oxQmu3
+• FULL SOURCE CODE: https://github.com/v1nx-ethical/RevRats
+• VIRUSTOTAL: https://www.virustotal.com/gui/file/0ceaf3b76577582c2ad029e78384d3a500c0ed51c989014a6d6df4e1eced0c9d
+• HYBRID ANALYSIS: https://hybrid-analysis.com/sample/0ceaf3b76577582c2ad029e78384d3a500c0ed51c989014a6d6df4e1eced0c9d
+
+┌─────────────────────┬─────────────────────────────────────────────────────────┐
+│ HASH ALGORITHM     │ VALUE                                                    │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA256             │ 0ceaf3b76577582c2ad029e78384d3a500c0ed51c989014a6d6df4e1e│
+│                     │ ced0c9d                                                 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ MD5                │ 2668c92bf6fe5659b92d2eeda516906b                         │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA1               │ d481391fab0d7c50827a4fb9362376d4ccd8ee45                 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA512             │ 26347fb8071a489e1d9254200b03fbb2ef648c0aff80e1d72be549e3│
+│                     │ 47127249e07cf529e48135aab095d7c4c0dcdbc87879a92e26724a5│
+│                     │ 9069bce975eed1025                                      │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA384             │ d5f0d336136b5774713c74d77d545f4ca712f16ad7f3071b4a2c8c16│
+│                     │ dbcd1c9ed1dd6b60e99eb5f48c68300171f47709               │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA224             │ a2a2f7905dd1923bfe5aad59faef23e9ad5163c2cc4955ac39fbf3d1│
+└─────────────────────┴─────────────────────────────────────────────────────────┘
+• THREAT ASSESSMENT: ⚠️ DANGEROUS MALWARE - DROPPER WITH REMOTE EXECUTION CAPABILITIES
