@@ -5,6 +5,6 @@
 │  • COMMUNITY SERVER: https://discord.gg/zMNUsjh9                            │
 │  • Reversed at REPOSITORY: https://github.com/v1nx-ethical/RevRats          │
 |  • Source code: https://raw.githubusercontent.com/moom825/Discord-RAT-2.0   |
-|                                                                             |
+|  • Source code: https://github.com/lostzombie/AchillesScript                |
 │  • LICENSE: MIT License (2025)                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
