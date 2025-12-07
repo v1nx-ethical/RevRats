@@ -1,0 +1,13 @@
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  DISCRIMINATOR: hussa.blox                                                  │││││││││││││││││││
+│  USER ID: 1187010847768334377                                               │││││││││││││││││││
+│  DISPLAY NAME: Hussa                                                        │││││││││││││││││││
+│  ACCOUNT CREATION: December 20, 2023 @ 13:37 UTC                            │││││││││││││││││││
+│  ACCOUNT AGE: 1 Year, 11 Months, 16 Days                                    │││││││││││││││││││
+│  NITRO STATUS: ACTIVE SUBSCRIPTION                                          │││││││││││││││││││
+│  PROFILE BANNER:                                                            │││││││││││││││││││
+│  https://cdn.discordapp.com/banners/1187010847768334377/21233f37967f0cf0a188208d38abde16.png?size=512|
+│  AVATAR URL:                                                                │││││││││││││││││││
+│  https://cdn.discordapp.com/avatars/1187010847768334377/8d26d4c6bf5d1a1c477e3ac5de694720.png?size=256|
+│  INFRASTRUCTURE EMAIL: ADMIN@ROFLAG.CC                                      │││││││││││││││││││
+└──────────────────────────────────────────────────────────────────────────────┘
