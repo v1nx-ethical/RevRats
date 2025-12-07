@@ -3,6 +3,8 @@
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  • PRIMARY ANALYST: Smocky                                                  │
 │  • COMMUNITY SERVER: https://discord.gg/zMNUsjh9                            │
-│  • SOURCE CODE REPOSITORY: https://github.com/v1nx-ethical/RevRats          │
+│  • Reversed at REPOSITORY: https://github.com/v1nx-ethical/RevRats          │
+|  • Source code: https://raw.githubusercontent.com/moom825/Discord-RAT-2.0   |
+|                                                                             |
 │  • LICENSE: MIT License (2025)                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
