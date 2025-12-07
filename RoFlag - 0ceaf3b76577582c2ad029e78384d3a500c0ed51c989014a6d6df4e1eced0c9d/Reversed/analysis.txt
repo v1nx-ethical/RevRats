@@ -1,0 +1,66 @@
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  CRYPTOGRAPHIC COMPONENTS                                                    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  • ENCRYPTION: AES-256-CBC with PKCS7 Padding                               │
+│  • KEY DERIVATION: Static embedded key                                      │
+│  • AES KEY (32 bytes):                                                      │
+│    99,54,97,52,99,56,102,49,57,48,101,50,52,98,49,50,98,51,52,56,102,57,49, │
+│    97,101,51,102,97,55,54,99,98                                             │
+│  • AES IV (16 bytes):                                                       │
+│    55,101,54,50,99,48,57,51,100,50,98,52,52,97,52,51                        │
+│  • STRING OBFUSCATION: XOR cipher with key=90                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  EXECUTION FLOW ANALYSIS                                                    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  1. Entry Point: GameManager_25473_Bean.Main()                              │
+│  2. Loads embedded encrypted payload via GetManifestResourceStream()        │
+│  3. Decrypts using hardcoded AES key/IV                                     │
+│  4. Writes decrypted executable to %TEMP%                                   │
+│  5. Executes with arguments: "--cfg [BASE64_CONFIG]"                        │
+│  6. Configuration (_cacheBuffer598):                                        │
+│     4f9XlsDR9xq2ztF83MoXtrKSgY5coUxOe/qYHEGLyL5owf0DBrAz3qzAeOWZNJPPszx11nZ │
+│     iXwHq14/OiDT/KYXnVNrGQTkY6MwiZAjr17+jzLdsOmoWURxv+g25Pg4TgeiOtFsngFosT1 │
+│     Q2ywJDuGvOMUZadGVGtXGoYN0oaeIl8URq2y8TUd5qLKVNXMB0YYV6m0wjtlHKjp54TfEOW │
+│     nAGti4sfjBHOnCLAh38Hf9qzn0hwLULBUdR0m1Dby4Om+OjpxfndEgUJDX/eY9YGAA4ZXwH │
+│     ... [TRUNCATED - FULL 1712 CHARACTER BASE64] ...                        │
+│  7. Processes embedded resources:                                           │
+│     • "earls.txt" → URLs for secondary payloads                             │
+│     • "binded*" resources → Additional encrypted executables                │
+│  8. Downloads and executes all payloads in parallel                         │
+│  9. Cleans up temporary files                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  EMBEDDED RESOURCE STRUCTURE                                                │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  • Main encrypted payload (unnamed resource)                                │
+│  • "earls.txt" - List of download URLs (encrypted)                          │
+│  • "binded*" - Multiple encrypted executable resources                      │
+│  • All resources encrypted with same AES-256-CBC key                        │
+│  • Execution order: Main → URLs → Binded resources                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  NETWORK BEHAVIOR                                                           │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  • HTTP Client: System.Net.Http.HttpClient                                  │
+│  • Timeout: 30 seconds                                                      │
+│  • URL Processing: Splits on \r, \n, commas                                 │
+│  • Payload Naming: Uses original filename or generates GUID-based name      │
+│  • Execution: Downloads → Temp execution → Delete                           │
+│  • Output Capture: Redirects stdout/stderr to console                       │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  OBFSICATION TECHNIQUES                                                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  • Fake namespaces: Steamworks.API, UnityEngine.Networking, etc.            │
+│  • Obfuscated class names: GameManager_25473_Bean                           │
+│  • Obfuscated method names: StartCore_2575, InitializeInternal_7317         │
+│  • Byte array constants for strings                                         │
+│  • XOR string encryption (key=90)                                           │
+│  • Fake method calls with Math.Abs() padding                                │
+│  • Junk DLL files for legitimacy                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
