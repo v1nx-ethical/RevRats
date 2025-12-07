@@ -7,3 +7,16 @@
 │  • SOURCE CODE REPOSITORY: https://github.com/v1nx-ethical/RevRats          │
 │  • LICENSE: MIT License (2025)                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  INVESTIGATIVE INTENT                                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  This forensic dossier was compiled to:                                     │
+│  1. Document malicious infrastructure for security community                │
+│  2. Enable AV vendors to block associated hashes and IOCs                   │
+│  3. Protect potential victims through awareness                             │
+│  4. Provide law enforcement with actionable intelligence                    │
+│  5. Archive TTPs (Tactics, Techniques, Procedures) for future reference     │
+│                                                                             │
+│  NO HARM IS INTENDED TOWARD THE THREAT ACTOR.                               │
+│  This is purely defensive cybersecurity work.                               │
+└──────────────────────────────────────────────────────────────────────────────┘
