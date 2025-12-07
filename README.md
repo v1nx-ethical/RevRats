@@ -42,6 +42,9 @@ Learn real-world malware techniques through comprehensive, documented reverse en
       -  Purpose: Research collaboration, technical discussion, educational support
         -  Scope: Defensive security research, malware analysis methodology, threat intelligence sharing
 
+## 🔒 Password
+-  Infected
+
 ## 📝 License & Usage
 This repository is provided for educational and research purposes only. All materials are intended to improve cybersecurity defense capabilities. 
 Users assume full responsibility for proper handling and containment of any technical information contained herein.
