@@ -1,0 +1,13 @@
+[Was the actor a skid?]
+The discord rat the actor used: https://github.com/moom825/Discord-RAT-2.0
+The windows defender the actor used: https://github.com/lostzombie/AchillesScript
+Phishing method: Claiming for it to be roblox/rec room cheats
+----------------------------------------------------------------------------------
+[Tokens and server information]
+DQ and supply server
+  - Server contained face pictures of people and peoples personal information and game cheats
+    - Discord rat bot token: MTQ0NjcwMzI2MTYxMTQ2Mjc4Nw.G_TIHk.XfR5f_zHADhnTpTholnR1qTGDmbEBD6bjymwL0
+      - Guild id: 1361948876130619604
+----------------------------------------------------------------------------------
+[Built by]:
+Still being discovered
