@@ -1,0 +1,30 @@
+██████████████████████████████████████████████████████████████████████████████████
+█  PHISHING COMPONENT: INSTRUCTIONS.txt (SOCIAL ENGINEERING LURE)            █
+██████████████████████████████████████████████████████████████████████████████████
+
+• FILE TYPE: ASCII text, with CRLF line terminators
+• SCAM METHOD: Roblox cheat/exploit instructions
+• CONTENT: Contains phishing instructions and references ADMIN@ROFLAG.CC
+• VIRUSTOTAL: https://www.virustotal.com/gui/file/32da07d4063f7ba94e05f6703abc4ca6beea72421802de166ac07d2281e40802
+• HYBRID ANALYSIS: https://hybrid-analysis.com/sample/32da07d4063f7ba94e05f6703abc4ca6beea72421802de166ac07d2281e40802
+
+┌─────────────────────┬─────────────────────────────────────────────────────────┐
+│ HASH ALGORITHM     │ VALUE                                                    │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA256             │ 32da07d4063f7ba94e05f6703abc4ca6beea72421802de166ac07d22│
+│                     │ 81e40802                                                 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ MD5                │ eed5a00f270dd0fd7ed4ef97e7fb628d                         │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA1               │ 567819544136e4f944010224c0e4e7584b078413                 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA512             │ cd1a69566d799b6d5aca6fb1c7a35a3f5ee2f108cc79a5cfe9d28a02│
+│                     │ f4c49f0ebba06ef4c222191b7903040fc77ea776fc4519350fe5481a│
+│                     │ db37d2532d825b2c                                      │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA384             │ a53d3debc578bd8b3116a2bd6f3a1da12e2573205bc17da01fae027e│
+│                     │ 6696a52ce8589ed82d9527a03a82ecf057252532               │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA224             │ f63d015c0a1ad328fcb3a0b2581aade0bad2340ecb1ae5f5d072a467│
+└─────────────────────┴─────────────────────────────────────────────────────────┘
+• THREAT ASSESSMENT: ⚠️ SOCIAL ENGINEERING LURE - PART OF PHISHING CAMPAIGN
