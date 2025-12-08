@@ -39,7 +39,22 @@ SECTION 1: PRIMARY THREAT ACTORS
 │ USERNAME: DQOnO │
 │ CONNECTION: Used as phishing front for distributing malware │
 └──────────────────────────────────────────────────────────────────────────────┘
-
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ THIRD IDENTITY: Liam (Real-World Persona) │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ REAL NAME: Liam │
+│ AGE: 16 │
+│ LOCATION: United Kingdom │
+│ OCCUPATION: Construction (primary), Cybercrime (secondary) │
+│ SKILL LEVEL: Skid (script kiddie - uses others' tools) │
+│ STRONG POINT: Social Engineering │
+│ CYBERCRIME SPECIALTIES: │
+│ • Database leak distribution │
+│ • Game cheat/trainer development & distribution │
+│ • Malware distribution (primarily repackaging others' creations) │
+│ MOTIVATION: Financial gain & "hacker" status among gaming peers │
+│ RISK PROFILE: Medium (opportunistic, relies on others' tools) │
+└──────────────────────────────────────────────────────────────────────────────┘
 ══════════════════════════════════════════════════════════════════════════════════
 SECTION 2: MALWARE COMPONENTS & ARTIFACTS
 ══════════════════════════════════════════════════════════════════════════════════
