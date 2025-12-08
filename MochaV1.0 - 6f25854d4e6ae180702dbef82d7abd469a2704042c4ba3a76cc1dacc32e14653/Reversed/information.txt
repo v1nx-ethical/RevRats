@@ -1,6 +1,6 @@
 [Was the actor a skid?]
 The discord rat the actor used: https://github.com/moom825/Discord-RAT-2.0
-The windows defender the actor used: https://github.com/lostzombie/AchillesScript
+The windows defender remover script the actor used: https://github.com/lostzombie/AchillesScript
 Phishing method: Claiming for it to be roblox/rec room cheats
 ----------------------------------------------------------------------------------
 [Tokens and server information]
