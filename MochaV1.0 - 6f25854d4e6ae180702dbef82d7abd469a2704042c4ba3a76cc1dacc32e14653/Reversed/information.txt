@@ -1,0 +1,472 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ║
+║ COMPLETE FORENSIC INVESTIGATION DOSSIER ║
+║ OPERATION: "GAME CHEAT DISTRIBUTORS" ║
+║ THREAT LEVEL: CRITICAL ║
+║ ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 1: PRIMARY THREAT ACTORS
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PRIMARY ACTOR: Core Splitta (@call_me_moor) │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ USER ID: 995583757438435359 │
+│ DISPLAY NAME: call_me_moor │
+│ DISCRIMINATOR: 0 │
+│ ACCOUNT CREATION: July 9, 2022 @ 11:54 PM │
+│ ACCOUNT AGE: 3.4 years (1246 days) │
+│ BADGES: None │
+│ ACCENT COLOR: #ff0004 │
+│ BANNER COLOR: #ff0004 │
+│ AVATAR DECORATION: Permanent (SKU ID: 1144058844004233369) │
+│ AVATAR ASSET: a_fed43ab12698df65902ba06727e20c0e │
+│ TECHNICAL DETAILS: │
+│ • Creation Timestamp: 1657436064825 │
+│ • Binary Representation: 000011011101000100000110001001110000111001000100010│
+│ 0000000011111 │
+│ PRIMARY GUILD: {"badge":null,"identity_enabled":false,"identity_guild_id":nu│
+│ ll,"tag":null} │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SECONDARY IDENTITY: DQ (Rec Room/Gaming Platform) │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ PLATFORM: Rec Room │
+│ DISPLAY NAME: DQ │
+│ USERNAME: DQOnO │
+│ CONNECTION: Used as phishing front for distributing malware │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 2: MALWARE COMPONENTS & ARTIFACTS
+══════════════════════════════════════════════════════════════════════════════════
+
+██████████████████████████████████████████████████████████████████████████████████
+█ PRIMARY MALWARE: Discord RAT (MochaV1.0.exe) █
+██████████████████████████████████████████████████████████████████████████████████
+
+• FILE TYPE: .NET Executable (Windows Portable Executable)
+• COMPILATION: .NET Framework 4.6.1, Assembly Version 1.0.0.0
+• ASSEMBLY GUID: cc12258f-af24-4773-a8e3-45d365bcbde9
+• ORIGINAL SOURCE: https://github.com/moom825/Discord-RAT-2.0
+• DECOMPILED SOURCE: Full analysis in previous section
+• VIRUSTOTAL: https://www.virustotal.com/gui/file/6f25854d4e6ae180702dbef82d7abd469a2704042c4ba3a76cc1dacc32e14653
+• HYBRID ANALYSIS: https://hybrid-analysis.com/sample/6f25854d4e6ae180702dbef82d7abd469a2704042c4ba3a76cc1dacc32e14653
+
+┌─────────────────────┬─────────────────────────────────────────────────────────┐
+│ HASH ALGORITHM │ VALUE │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA256 │ 6f25854d4e6ae180702dbef82d7abd469a2704042c4ba3a76cc1dacc│
+│ │ 32e14653 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ MD5 │ a13d823b177825ed54673f8df916df7b │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA1 │ 0ca90b93b1c4dceec9af581d604bfc3abc2f8525 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA512 │ 2f897315bc7d0e4b8a139aba4195bfe0def2c2c7faaf9bee0e637a46│
+│ │ a086d26fe53c30a9a06f805c4c48abe9fbe82637aa2b1a5a8599037│
+│ │ d46763a8ee04284df │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA384 │ 97cb6fe4d3c81da5e3f6ad1965359cc8f479195a0b4320affbfaa1be│
+│ │ 151ae972f5b7e27ccd527003bab9889f3dfa7c74 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA224 │ 05065fd2c7c63139999dd4291a98ed96f1d83bd728e4661fca7dc438│
+└─────────────────────┴─────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████████
+█ DEFENDER DISABLER: AchillesScript.cmd █
+██████████████████████████████████████████████████████████████████████████████████
+
+• FILE TYPE: Windows Batch Script
+• PURPOSE: Comprehensive Windows Defender and security component disablement
+• ORIGINAL SOURCE: https://github.com/lostzombie/AchillesScript
+• FUNCTION: Disables Defender via policies, registry, services, and process blocking
+• VIRUSTOTAL: https://www.virustotal.com/gui/file/0086762522fb0c0fbdec90223d08fbd8b71c737a7d89374925ce879e48600c22
+• HYBRID ANALYSIS: https://hybrid-analysis.com/sample/0086762522fb0c0fbdec90223d08fbd8b71c737a7d89374925ce879e48600c22
+
+┌─────────────────────┬─────────────────────────────────────────────────────────┐
+│ HASH ALGORITHM │ VALUE │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA256 │ 0086762522fb0c0fbdec90223d08fbd8b71c737a7d89374925ce879e│
+│ │ 48600c22 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ MD5 │ d04395396f8d16e34661bf0a8d1db898 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA1 │ e538336b3aaabdf15abc3932652fb03d0b3d5c83 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA512 │ 11df28a772a16117eb1c79e0709bc2dcb10bed036c6a3f13bfb8dbe2│
+│ │ 1baa63f306b442de6a706230701dcac24c44bd39909f1bddf5095351│
+│ │ c878bd7f843be338 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA384 │ 9f9d7d13895cb5af39c2e609187920d12d3821755a97175eefc75911│
+│ │ 0aff49f1551cfa862ee81a989b37d9eed49c6d47 │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ SHA224 │ b8d778d5fe5fe6b12821a996c18f8dd63fd6e35135e47b10ec88e5e6│
+└─────────────────────┴─────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████████
+█ MALWARE INFRASTRUCTURE: DISCORD BOT TOKEN █
+██████████████████████████████████████████████████████████████████████████████████
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ BOT TOKEN: MTQ0NjcwMzI2MTYxMTQ2Mjc4Nw.G_TIHk.XfR5f_zHADhnTpTholnR1qTGDmbEBD6│
+│ bjymwL0 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ GUILD ID: 1361948876130619604 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ CHANNEL STRUCTURE: │
+│ • Auto-creates "session-[number]" channels for each victim │
+│ • Pings @here with victim information on connection │
+│ • Message format: "@here :white_check_mark: New session opened {session} | │
+│ User: {username} | IP: {ip} | Admin: {admin_status}" │
+│ • Uses bot token for API communication │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████████
+█ EMBEDDED DLL PAYLOADS (DYNAMIC LOADING) █
+██████████████████████████████████████████████████████████████████████████████████
+
+┌─────────────────────┬─────────────────────────────────────────────────────────┐
+│ DLL NAME │ FUNCTION │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ PasswordStealer │ Password theft from browsers and system │
+│ │ Source: GitHub raw URL │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ rootkit │ Process/file hiding via kernel manipulation │
+│ │ Requires administrator privileges │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ unrootkit │ Removes rootkit components │
+│ │ Requires administrator privileges │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ Webcam │ Webcam capture and control │
+│ │ Camera enumeration and image capture │
+├─────────────────────┼─────────────────────────────────────────────────────────┤
+│ Token grabber │ Discord token extraction │
+│ │ Searches Discord directories for tokens │
+└─────────────────────┴─────────────────────────────────────────────────────────┘
+
+• DOWNLOAD URLS: Hardcoded GitHub raw URLs in dll_url_holder dictionary
+• LOADING METHOD: Assembly.Load() from byte arrays
+• EXECUTION: Activator.CreateInstance() + reflection method invocation
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 3: MALWARE CAPABILITIES MATRIX
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ COMMAND & CONTROL FEATURES │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ ✓ Discord WebSocket Gateway (wss://gateway.discord.gg) │
+│ ✓ Bot token authentication │
+│ ✓ Auto-channel creation for each victim │
+│ ✓ Heartbeat mechanism (opcode 1) │
+│ ✓ JSON-based command protocol │
+│ ✓ Reconnection logic │
+│ ✓ Multi-session management │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SYSTEM MANIPULATION CAPABILITIES │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ ✓ Shell command execution (cmd.exe) │
+│ ✓ Process killing by name │
+│ ✓ UAC bypass via scheduled tasks │
+│ ✓ Windows Defender disablement │
+│ ✓ Firewall disablement │
+│ ✓ Task Manager disable/enable │
+│ ✓ Startup persistence (registry/scheduled tasks) │
+│ ✓ Critical process designation (BSOD on kill) │
+│ ✓ Rootkit installation/removal │
+│ ✓ Input blocking/unblocking │
+│ ✓ Blue screen triggering │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SURVEILLANCE & DATA THEFT │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ ✓ Screenshot capture │
+│ ✓ Webcam photo capture │
+│ ✓ Audio file playback │
+│ ✓ Clipboard monitoring │
+│ ✓ Password theft from browsers │
+│ ✓ Discord token harvesting │
+│ ✓ Geolocation via IP │
+│ ✓ Process listing │
+│ ✓ File system enumeration │
+│ ✓ Idle time monitoring │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ NETWORK & FILE OPERATIONS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ ✓ File upload/download (Discord attachments) │
+│ ✓ Remote file execution via URLs │
+│ ✓ Wallpaper changing │
+│ ✓ Website opening │
+│ ✓ File deletion │
+│ ✓ Directory navigation │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SOCIAL ENGINEERING & MISCELLANEOUS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ ✓ Text-to-speech (speak messages aloud) │
+│ ✓ Message box popups │
+│ ✓ Keystroke injection (SendKeys) │
+│ ✓ Help menu generation │
+│ ✓ Session killing (channel deletion) │
+│ ✓ Self-termination │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 4: ATTACK CHAIN ANALYSIS
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 1: INITIAL COMPROMISE │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ VECTOR: Social engineering via "game cheats" │
+│ TARGET: Roblox/Rec Room players (primarily minors) │
+│ LURE: Fake cheat programs promising game advantages │
+│ DISTRIBUTION: Discord servers, game communities, forums │
+│ FILE: MochaV1.0.exe presented as "cheat installer" │
+│ SOCIAL PROOF: DQ identity in gaming platforms │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 2: PERSISTENCE ESTABLISHMENT │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Initial execution of MochaV1.0.exe │
+│ 2. Discord WebSocket connection establishment │
+│ 3. Auto-channel creation in attacker's Discord server │
+│ 4. Victim information exfiltration (IP, username, admin status) │
+│ 5. @here notification to attacker │
+│ 6. Command loop initiation │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 3: DEFENSE EVASION │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Execution of AchillesScript.cmd (if admin) │
+│ 2. Windows Defender disablement via: │
+│ • Group Policy manipulation │
+│ • Registry modifications │
+│ • Service stopping │
+│ • Process blocking via debugger hijacking │
+│ 3. Firewall disablement │
+│ 4. Task Manager disablement (optional) │
+│ 5. Rootkit installation for stealth (optional) │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 4: CAPABILITY EXPANSION │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Dynamic loading of additional DLLs from GitHub │
+│ 2. Password stealing module execution │
+│ 3. Token harvesting from Discord installations │
+│ 4. Webcam access establishment │
+│ 5. Surveillance capability deployment │
+│ 6. Further persistence mechanisms (startup, critical process) │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PHASE 5: MONETIZATION & EXFILTRATION │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Credential harvesting (passwords, Discord tokens) │
+│ 2. Surveillance data collection (screenshots, webcam photos) │
+│ 3. System information gathering │
+│ 4. Potential ransomware deployment (capability exists) │
+│ 5. Botnet incorporation (via remote command execution) │
+│ 6. Data exfiltration via Discord channels/attachments │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 5: TECHNICAL IOCs (INDICATORS OF COMPROMISE)
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ FILE HASHES │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • MochaV1.0.exe: 6f25854d4e6ae180702dbef82d7abd469a2704042c4ba3a76cc1dacc32│
+│ e14653 │
+│ • AchillesScript.cmd: 0086762522fb0c0fbdec90223d08fbd8b71c737a7d89374925ce8│
+│ 79e48600c22 │
+│ • Associated DLLs (password, rootkit, webcam, token grabber) │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ NETWORK INDICATORS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Discord WebSocket: wss://gateway.discord.gg/?v=9&encoding=json │
+│ • Bot Token: MTQ0NzcwMzI2MTYxMTQ2Mjc4Nw.G_TIHk.XfR5f_zHADhnTpTholnR1qTGDmbE│
+│ BD6bjymwL0 │
+│ • Guild ID: 1361948876130619604 │
+│ • GitHub URLs for DLL downloads (raw.githubusercontent.com) │
+│ • Geolocation API: https://geolocation-db.com/json │
+│ • File upload service: https://file.io/ │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ REGISTRY INDICATORS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Task Manager disable: HKCU\Software\Microsoft\Windows\CurrentVersion\ │
+│ Policies\System\DisableTaskMgr │
+│ • Rootkit configuration: HKLM\SOFTWARE$77config\ │
+│ • Startup persistence: │
+│ - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run │
+│ - Scheduled tasks: $77 + filename │
+│ • Defender exclusions: Various HKLM\SOFTWARE\Microsoft\Windows Defender │
+│ keys │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PROCESS & FILE SYSTEM INDICATORS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Process names: MochaV1.0.exe, cmd.exe with specific arguments │
+│ • File paths: %TEMP% downloads, randomly named executables │
+│ • DLL sideloading: Assembly.Load() of byte arrays │
+│ • WebSocket client activity on Discord ports │
+│ • Suspicious scheduled tasks with $77 prefix │
+│ • Image file execution options debugger hijacking │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 6: THREAT ASSESSMENT & IMPACT
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ RISK CLASSIFICATION │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ SEVERITY: CRITICAL (9.5/10) │
+│ IMPACT: HIGH (Full system compromise, data theft, surveillance) │
+│ PROPAGATION: MEDIUM (Social engineering dependent) │
+│ DETECTABILITY: MEDIUM (Obfuscated but leaves artifacts) │
+│ SOPHISTICATION: HIGH (Multi-stage, defense evasion, modular) │
+│ MONETIZATION POTENTIAL: HIGH (Credentials, tokens, botnet) │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ VULNERABLE DEMOGRAPHICS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Primary: Roblox/Rec Room players (ages 8-16) │
+│ • Secondary: General gaming community seeking cheats │
+│ • Tertiary: Users downloading "game enhancement" software │
+│ • High-risk: Users with administrator privileges │
+│ • Geographical: Global English-speaking gaming communities │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ POTENTIAL BUSINESS IMPACTS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Credential theft leading to account compromise │
+│ • Financial loss through stolen payment methods │
+│ • Privacy violation via webcam/screenshot surveillance │
+│ • System instability from defense disablement │
+│ • Botnet recruitment for DDoS or spam │
+│ • Reputational damage to gaming platforms │
+│ • Potential legal liability for compromised systems │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 7: MITIGATION & REMEDIATION
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ IMMEDIATE CONTAINMENT ACTIONS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. ISOLATE affected systems from network │
+│ 2. REVOKE Discord bot token: MTQ0NjcwMzI2MTYxMTQ2Mjc4Nw.G_TIHk... │
+│ 3. DELETE Discord guild: 1361948876130619604 │
+│ 4. REPORT to Discord Trust & Safety with full dossier │
+│ 5. BLOCK GitHub raw URLs used for DLL downloads │
+│ 6. DISABLE associated Discord accounts │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SYSTEM REMEDIATION STEPS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Run full antivirus scan with updated definitions │
+│ 2. Check for and remove: │
+│ • Scheduled tasks with $77 prefix │
+│ • Registry entries under $77config │
+│ • Image file execution options debuggers │
+│ • Startup registry entries │
+│ 3. Re-enable Windows Defender and Firewall │
+│ 4. Reset all passwords stored in browsers │
+│ 5. Revoke Discord sessions and regenerate tokens │
+│ 6. Cover webcam when not in use │
+│ 7. Monitor for unusual network activity │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PREVENTIVE MEASURES │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. EDUCATE gaming communities about executable risks │
+│ 2. IMPLEMENT application whitelisting │
+│ 3. USE standard user accounts (not administrator) │
+│ 4. ENABLE controlled folder access (Windows) │
+│ 5. REGULARLY update security software │
+│ 6. MONITOR children's computer usage │
+│ 7. VERIFY software sources before installation │
+│ 8. USE virtual machines for testing unknown software │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+SECTION 8: INVESTIGATION METADATA
+══════════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ INVESTIGATION TEAM │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • PRIMARY ANALYST: Smocky │
+│ • COMMUNITY SERVER: https://discord.gg/zMNUsjh9 │
+│ • REVERSED AT REPOSITORY: https://github.com/v1nx-ethical/RevRats │
+│ • SOURCE CODE LOCATIONS: │
+│ - Discord RAT: https://raw.githubusercontent.com/moom825/Discord-RAT-2.0│
+│ - AchillesScript: https://github.com/lostzombie/AchillesScript │
+│ • LICENSE: MIT License (2025) │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ INVESTIGATIVE METHODOLOGY │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 1. Static analysis of malware binaries │
+│ 2. Dynamic analysis in controlled environment │
+│ 3. Network traffic monitoring │
+│ 4. Registry and filesystem artifact collection │
+│ 5. Code deobfuscation and reverse engineering │
+│ 6. Threat actor identification and attribution │
+│ 7. Infrastructure mapping │
+│ 8. Impact assessment and mitigation planning │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ LEGAL & ETHICAL DISCLAIMERS │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • This dossier is for DEFENSIVE cybersecurity purposes only │
+│ • No unauthorized access or hacking was performed │
+│ • All information derived from public sources and malware analysis │
+│ • Intended for security professionals, law enforcement, and victims │
+│ • Report malicious activity to appropriate authorities │
+│ • Protect children and vulnerable users from such threats │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════════════════
+DOSSIER COMPLETION TIME
+UTC: 2025-12-08
+STATUS: COMPREHENSIVE ANALYSIS
+PAGES: 1
+WORDS: 2,850+
+THREATS DOCUMENTED: 2 PRIMARY MALWARE
+ACTORS IDENTIFIED: 1 PRIMARY, 1 SECONDARY
+══════════════════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ REMEMBER: This is a REAL threat targeting REAL people. ║
+║ Share this information responsibly to protect potential victims. ║
+║ Report to Discord: https://dis.gd/report ║
+║ Cybersecurity is a shared responsibility. ║
+╚══════════════════════════════════════════════════════════════════════════════╝
