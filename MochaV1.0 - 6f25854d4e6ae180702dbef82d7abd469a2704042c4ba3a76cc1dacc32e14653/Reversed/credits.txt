@@ -1,5 +1,5 @@
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│  INVESTIGATION TEAM                                                         │
+│  INVESTIGATION TEAM / Malware creators                                       │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  • PRIMARY ANALYST: Smocky                                                  │
 │  • COMMUNITY SERVER: https://discord.gg/zMNUsjh9                            │
